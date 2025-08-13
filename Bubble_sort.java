@@ -2,9 +2,9 @@
 // Use this editor to write, compile and run your Java code online
 
 class Main {
-    public static void swap(int a, int b){
+    public static void swap(int i, int j, int[] arr){
         int c=0;
-        c=a;
+        c=arr[i];
         a=b;
         b=c;
     }
@@ -24,7 +24,11 @@ class Main {
         }    
    }
 }
+        
+//What do u think  the answer  will be it is wrong answer is {2,4,1,5,6}. The same no changes.                                   More specifically:
 
-
+// Java is always pass-by-value — but when you pass an object, the "value" is actually a reference (a pointer to the object in memory).
+// For primitives (int, double, etc.), the value is the actual number — so Java just copies it, and the original can’t be changed.
+// You’re passing the values (copies) of a and b.
 
 
